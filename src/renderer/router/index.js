@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import GatecountForm from 'gatecount-form'
+import Home from '@/components/Home'
+import Counts from '@/components/Counts'
 
 Vue.use(Router)
 
@@ -8,8 +9,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'gatecountForm'
-      // component: GatecountForm
+      name: 'Home',
+      component: Home
+    },
+    {
+      path: '/counts',
+      name: 'Counts',
+      component: Counts
     },
     {
       path: '*',

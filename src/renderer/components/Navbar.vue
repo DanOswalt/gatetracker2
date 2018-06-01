@@ -1,6 +1,9 @@
 <template>
   <nav class="navbar">
-
+    <ul>
+      <router-link :to="{ name: 'Home' }">Home</router-link>
+      <router-link :to="{ name: 'Counts' }">Counts</router-link>
+    </ul>
   </nav>
 </template>
 
@@ -8,9 +11,7 @@
   export default {
     name: 'Navbar',
     data () {
-      return {
-
-      }
+      return {}
     }
   }
 </script>   
